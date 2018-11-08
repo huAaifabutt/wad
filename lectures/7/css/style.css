@@ -1,6 +1,12 @@
 #main {
-    /* add CSS here */
+    text-align: center;
 }
 .pet {
-    /* add CSS here */
+    border: double;
+    border-radius: 40px;
+    border-color: #fa0185;
+    box-shadow: 8px 7px 18px 2px;
+    width: 36%;
+
+    cursor: pointer;
 }
