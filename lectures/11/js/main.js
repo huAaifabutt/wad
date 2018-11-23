@@ -3,12 +3,15 @@
 //============================================
 
 
-/*var todos = [];
+/*
+var todos = [];
 function add() {
     var task = document.getElementById("task").value;
     todos.push(task);
     document.getElementById('todos').innerText = todos;
-}*/
+   /!* when we press the add button in it...it stores the text we've written in the input feild.*!/
+}
+*/
 
 
 //============================================
@@ -16,7 +19,8 @@ function add() {
 //============================================
 
 
-/*var todos = [];
+/*
+var todos = [];
 function add() {
     var task = document.getElementById('task').value;
     todos.push(task);
@@ -34,7 +38,9 @@ function show() {
         ul.appendChild(li);
     }
     document.getElementById('todos').appendChild(ul);
-}*/
+    /!*i think it is doing the same work as above plus it is showing it in a list type format*!/
+}
+*/
 
 
 //============================================
@@ -84,6 +90,7 @@ function show() {
     document.getElementById('todos').appendChild(ul);
 }
 show();
+/!*It is showing it in a list type format and this time it added a delete button*!/
 */
 
 
@@ -93,7 +100,8 @@ show();
 //============================================
 
 
-/*function getTodos() {
+/*
+function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -162,7 +170,8 @@ function isDone(e) {
     localStorage.setItem('todo',JSON.stringify(todos));
     show();
 }
-show();*/
+show();
+*/
 
 
 
@@ -181,7 +190,7 @@ HINT: use text-decoration:line-through; property of CSS
 
 2- Enable Editing todos in text field to update text
 
-
+SORRY SIR I TRIED BUT I CAN NOT UNDERSTAND IT COMPLETELY...IF U CAN EXPLAIN IT...I'LL BE GREATFULL
 
 */
 
