@@ -27,19 +27,10 @@
 <p id="calc"></p>
 <p id="example1"></p>
 <script>
-    /*
         document.getElementById("text").innerText = "This is a sample text";
-    */
-/*
         document.getElementById("calc").innerText = 5 + 5;
-*/
-    /*
         document.getElementById("example1").innerText = 'Example text using Single Quote';
-    */
 </script>
-<!--
-<script src="js/main.js"></script>
--->
 
 
 
@@ -47,29 +38,25 @@
 
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<!--
 <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
--->
 
 <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
 
-<!--
 <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
--->
 
 
 <h2>JavaScript Can Change HTML Styles (CSS)</h2>
 <p>Changing the style of an HTML element, is a variant of changing an HTML
     attribute:</p>
-<p id="alter_size">JavaScript can change the style of an HTML element.</p>
+<p id="alter_size" style="display: none">JavaScript can change the style of an HTML element.</p>
 
-<button type="button" onclick="document.getElementById('alter_size').style.fontSize='35px'">Click Me!</button>
+<button type="button" onclick="document.getElementById('alter_size').style.display = 'block'">Show Hidden Text!</button>
 
 
 <h2>JavaScript Can Hide HTML Elements</h2>
 <p id="change_display">JavaScript can hide HTML elements.</p>
 
-<button type="button" onclick="document.getElementById('change_display').style.display='none'">Click Me!</button>
+<button type="button" onclick="document.getElementById('change_display').style.display='none'">Change Display!</button>
 
 
 <p>JavaScript can show hidden HTML elements.</p>
@@ -77,5 +64,7 @@
 <p id="show_it" style="display:none;">Hello JavaScript!</p>
 
 <button type="button" onclick="document.getElementById('show_it').style.display='block'">Click Me!</button>
+<script src="js/main.js"></script>
+
 </body>
 </html>

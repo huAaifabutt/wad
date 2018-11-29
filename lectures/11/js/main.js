@@ -19,8 +19,7 @@ function add() {
 //============================================
 
 
-/*
-var todos = [];
+/*var todos = [];
 function add() {
     var task = document.getElementById('task').value;
     todos.push(task);
@@ -39,8 +38,7 @@ function show() {
     }
     document.getElementById('todos').appendChild(ul);
     /!*i think it is doing the same work as above plus it is showing it in a list type format*!/
-}
-*/
+}*/
 
 
 //============================================
@@ -48,8 +46,7 @@ function show() {
 //============================================
 
 
-/*
-function getTodos() {
+/*function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
     if(todos_str !== null)
@@ -89,9 +86,8 @@ function show() {
     }
     document.getElementById('todos').appendChild(ul);
 }
-show();
-/!*It is showing it in a list type format and this time it added a delete button*!/
-*/
+show();*/
+/*It is showing it in a list type format and this time it added a delete button*/
 
 
 
@@ -99,8 +95,8 @@ show();
 //-----------  STEP - 4 ----------------------
 //============================================
 
-
 /*
+
 function getTodos() {
     var todos = [];
     var todos_str = localStorage.getItem('todo');
@@ -158,6 +154,7 @@ function show() {
 }
 
 function isDone(e) {
+
     var todos = getTodos();
     if(todos[e.target.id].isDone) {
         e.target.classList.add('done');
