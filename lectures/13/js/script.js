@@ -32,6 +32,8 @@ function displayNext() {
     if(selector == null)
     {
         var msg=document.getElementById("quiz-message");
+        var choice=document.getElementById("choice-list");
+        choice.innerHTML = '';
         msg.style.color = 'red';
         msg.style.display = "inline";
         msg.innerText="Please select an option";
