@@ -1,20 +1,32 @@
 var currentBalance=1000000;
 var balance=document.getElementById("balance");
-function initialize() {
+var a=[{
+    CurrentBalance:1000,
+    Title:"Huzaifa Bank Limited",
+    Currency:"Pounds",
+    Ibn:"2346435"
+},{
+    CurrentBalance:1000,
+    Title:"Zuraiz Bank Limited",
+    Currency:"Dollers",
+    Ibn:"9522"
+}];
+function initialize()
+{
     var title= document.getElementById("title");
-    title.innerText="Huzaifa Rizwan";
-    balance.innerText=currentBalance;
+    title.innerText=a[1].Title;
+    balance.innerText=a[1].CurrentBalance;
     var currency=document.getElementById("currency");
-    currency.innerText="PKR";
-    document.getElementById("IBAN").innerText="85694";
+    currency.innerText=a[1].Currency;
+    document.getElementById("IBAN").innerText=a[1].Ibn;
+    currentBalance=a[1].CurrentBalance;
 }
-
 initialize();
 function takeInput(z) {
     if(z.key=="Enter")
     {
        var val=document.getElementById("deposit").value;
-      if(! isNaN(val))
+      if(!isNaN(val))
       {
           currentBalance= currentBalance+parseInt(val);
           balance.innerText=currentBalance;
@@ -24,7 +36,6 @@ function takeInput(z) {
               '<th align="left" valign="middle" scope="col">'+"Deposit"+'</th>'+
               '<th align="left" valign="middle" scope="col">'+ val+'</th>'+
               '</tr>';
-
       }
       else
       {
@@ -46,7 +57,6 @@ function widrawInput(z) {
         }
         else
         {
-
             currentBalance= currentBalance-parseInt(val);
             balance.innerText=currentBalance;
             var tt=document.getElementById("transaction-table");
@@ -58,5 +68,3 @@ function widrawInput(z) {
         }
     }
 }
-
-

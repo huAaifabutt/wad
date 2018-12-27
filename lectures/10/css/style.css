@@ -5,22 +5,21 @@
     text-align: center;
     width: 100%;
 }
-
-    @media only screen and (min-width: 400px) {
-        .col {width: 100%;}
-    }
-    @media only screen and (min-width: 600px) {
-        .col{width: 50%;}
-    }
-    @media only screen and (min-width: 800px) {
-      .col{width: 33.3%;}
-    }
-    @media only screen and (min-width: 800px) {
-        .col{width: 25%;}
-    }
-    @media only screen and (min-width: 800px) {
-        .col{width: 20%;}
-    }
+@media only screen and (max-width: 400px) {
+.col {width: 100%;}
+}
+@media only screen and (max-width: 600px) {
+.col{width: 50%;}
+}
+@media only screen and (max-width: 800px) {
+.col{width: 33.3%;}
+}
+@media only screen and (max-width: 800px) {
+.col{width: 25%;}
+}
+@media only screen and (max-width: 800px) {
+.col{width: 20%;}
+}
 .col:hover
 {
     

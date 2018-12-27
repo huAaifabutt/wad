@@ -187,7 +187,7 @@ HINT: use text-decoration:line-through; property of CSS
 
 2- Enable Editing todos in text field to update text
 
-SORRY SIR I TRIED BUT I CAN NOT UNDERSTAND IT COMPLETELY...IF U CAN EXPLAIN IT...I'LL BE GREATFULL
+SORRY SIR I TRIED BUT I CAN NOT UNDERSTAND IT COMPLETELY...IF U CAN EXPLAIN IT...I'LL BE GREATFULL!
 
 */
 
