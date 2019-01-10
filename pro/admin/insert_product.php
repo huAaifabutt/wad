@@ -14,12 +14,18 @@ if(isset($_POST['insert_pro'])){
     $pro_image_tmp = $_FILES['pro_image']['tmp_name'];
     move_uploaded_file($pro_image_tmp,"product_images/$pro_image");
 
-    $insert_product = "insert into products (pro_cat, pro_brand,pro_title,pro_price,pro_desc,pro_image,pro_keywords) 
-                  VALUES ('$pro_cat','$pro_brand','$pro_title','$pro_price','$pro_desc','$pro_image','$pro_keywords');";
-    $insert_pro = mysqli_query($con, $insert_product);
-    if($insert_pro){
+    $insert_product = "insert into products(pro_cat,pro_brand,pro_title,pro_price,pro_desc,pro_keywords)
+                    values ('$pro_cat','$pro_brand','$pro_title','$pro_price','$pro_desc','$pro_keywords')";
+    $insert_pro =mysqli_query($con, $insert_product);
+    echo $insert_product;
+    echo $insert_pro;
+   if($insert_pro){
+       echo "failed";
         header("location: ".$_SERVER['PHP_SELF']);
     }
+}
+else{
+    echo "not set";
 }
 ?>
 <!DOCTYPE html>
@@ -40,7 +46,7 @@ if(isset($_POST['insert_pro'])){
 <body>
 <div class="container">
     <h1 class="text-center my-4"><i class="fas fa-plus fa-md"></i> <span class="d-none d-sm-inline"> Add New </span> Product </h1>
-    <form action="insert_product.php" method="post" enctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
         <div class="row">
             <div class="d-none d-sm-block col-sm-3 col-md-4 col-lg-2 col-xl-2 mt-auto">
                 <label for="pro_title" class="float-md-right"> <span class="d-sm-none d-md-inline"> Product </span> Title:</label>
